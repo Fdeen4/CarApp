@@ -14,6 +14,22 @@ public class Car extends Vehicle {
     }
 
     //instance methods
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public String start () {
         return "The " + color + " " + make + " is starting";
     }
@@ -38,4 +54,6 @@ public class Car extends Vehicle {
     public String passMake (){
         return  "The " + color + " " + make + " just passed the red Porsche";
     }
-}
+
+
+    }

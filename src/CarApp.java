@@ -5,6 +5,13 @@ public class CarApp {
         Car porsche = new Car (50, "Porsche", "red");
         Car Jetta = new Car (90, "Jetta", "blue");
 
+        // Create a driver instance
+        Driver bob = new Driver("Bob");
+
+        // Output the car driven by driver test statement
+        System.out.println(porsche.getColor() + " " + porsche.getMake() +
+                " " + "is being driven by " + bob.getName().substring(8));
+
         // Call the methods for each car one after the other
         System.out.println(porsche.start());
         System.out.println(Jetta.start());
